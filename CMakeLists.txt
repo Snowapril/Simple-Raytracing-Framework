@@ -37,4 +37,4 @@ set(CMAKE_MACOSX_RPATH ON)
 add_subdirectory(Extensions)
 add_subdirectory(SRFramework)
 
-# add_dependencies(SRFramework)
+add_dependencies(SRFramework GoonMath)
