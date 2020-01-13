@@ -1,6 +1,17 @@
+/**
+ * @file Polygon.h
+ * @author snowapril (https://github.com/Snowapril)
+ * @brief 
+ * @date 2020-01-13
+ * 
+ * @copyright Copyright (c) 2019 snowapril
+ * This code is licensed under MIT License (see LICENSE for details)
+ * 
+ */
 #pragma once
 
 #include <cassert>
+#include <vector>
 #include <gm/vector.h>
 #include <type_traits>
 
@@ -43,7 +54,7 @@ namespace srf
             return vertices[index];
         }
         virtual vertex_type getNormal() const noexcept = 0;
-        virtual void split(polygon splitPolygon, polygon& pos, polygon& neg) noexcept = 0;
+        virtual void split(polygon splitPolygon, std::vector<polygon>& pos, std::vector<polygon>& neg) noexcept = 0;
     public:
         vertex_type vertices[NumVertices];
     };
@@ -59,7 +70,7 @@ namespace srf
         {
             
         }
-        void split(polygon splitPolygon, polygon& pos, polygon& neg) noexcept override
+        void split(polygon splitPolygon, std::vector<polygon>& pos, std::vector<polygon>& neg) noexcept override
         {
 
         }
@@ -76,7 +87,7 @@ namespace srf
         {
             
         }
-        void split(polygon splitPolygon, polygon& pos, polygon& neg) noexcept override
+        void split(polygon splitPolygon, std::vector<polygon>& pos, std::vector<polygon>& neg) noexcept override
         {
 
         }
