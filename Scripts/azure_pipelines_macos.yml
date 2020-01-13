@@ -15,4 +15,4 @@ steps:
     cd Bin
     cmake ..
     make -j 8
-    ./bin/GoonRenderer
+    ./bin/SRFramework

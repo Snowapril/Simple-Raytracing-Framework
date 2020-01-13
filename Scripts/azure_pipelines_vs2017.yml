@@ -9,8 +9,8 @@ steps:
       tree
   - task: VSBuild@1
     inputs:
-      solution: 'D:\a\1\s\Bin\Goon.sln'
+      solution: 'D:\a\1\s\Bin\SRF.sln'
       configuration: Release
       platform: x64
   - script: |
-      D:\a\1\s\Bin\bin\Release\GoonRenderer.exe
+      D:\a\1\s\Bin\bin\Release\SRFramework.exe
