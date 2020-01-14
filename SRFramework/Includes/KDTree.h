@@ -1,8 +1,8 @@
 /**
- * @file BSP.h
+ * @file KDTree.h
  * @author snowapril (https://github.com/Snowapril)
- * @brief Polygon-ALigned Binary Space Partitioning tree for scene traversing.
- * @date 2020-01-13
+ * @brief Axis-ALigned Binary Space Partitioning tree for scene traversing.
+ * @date 2020-01-14
  * 
  * @copyright Copyright (c) 2019 snowapril
  * This code is licensed under MIT License (see LICENSE for details)
@@ -18,9 +18,9 @@
 
 namespace srf
 {
-    //! This is Polygon-Aligned BSP Tree.
+    //! Axis-Aligned BSP Tree == KDTree
     template <typename Polygon>
-    class BSP
+    class KDTree
     {
     public:
         using polygon_type = Polygon;
